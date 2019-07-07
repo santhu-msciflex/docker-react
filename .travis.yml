@@ -4,4 +4,3 @@ services:
 
 before_install:
   - docker build -t santhosh/docker-react -f Dockerfile.dev .
-
