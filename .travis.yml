@@ -6,4 +6,4 @@ before_install:
   - docker build -t santhosh/docker-react:1.0 -f Dockerfile.dev .
 
 script:
-  - docker run santhosh/docker-react:1.0 npm run test -- --coverage
+  - docker run -e CI=true santhosh/docker-react:1.0 npm run test -- --coverage
